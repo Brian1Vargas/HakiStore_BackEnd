@@ -45,7 +45,7 @@ app.get('/complete-order', async (req, res) => {
 
 
 app.post('/track/order', async (req, res) => {
-    const { orderId } = req.body;  // Obtener orderId del cuerpo de la solicitud
+    const { orderId } = req.body;  
 
     if (!orderId) {
         return res.status(400).json({ error: 'Order ID is required' });
